@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #222222;
+    font-family: sans-serif;
+}
+a {
+    color: #ffffff;
+}
+.wrap {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 2000px;
+    width: 100%;
+}
+.logo {
+    width: 200px;
+    max-width: 500px;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+.logo > img {
+    display: block;
+    max-width: 100%;
+}
+.title {
+    color: #ffffff;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
+.description {
+    color: #c0c6cc;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.social > ul {
+    margin: 0;
+    padding: 0;
+}
+.social > ul > li {
+    display: inline-block;
+    padding: 20px 15px 20px 0;
+}
+.social > ul > li:first-child {
+    padding-left: 0 !important;
+}
+.social > ul > li:last-child {
+    padding-right: 0 !important;
+}
+.social > ul > li > a {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+}
+@media (max-width: 768px){
+    .logo {
+        width: 120px;
+    }
+    .title {
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .description {
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .social > ul > li {
+        padding: 16px 12px 16px 0;
+    }
+}
+@media (max-width: 540px) {
+    .logo {
+        width: 98px;
+    }
+    .title {
+        font-size: 29px;
+        line-height: 24px;
+    }
+    .description {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .social > ul > li {
+        padding: 13px 10px 13px 0;
+    }
+}
